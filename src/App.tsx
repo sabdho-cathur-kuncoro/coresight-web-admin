@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAuth } from "./hooks/useAuth";
 import { useToast } from "./hooks/useToast";
 import Login from "./components/Login";
@@ -8,14 +8,13 @@ import Dashboard from "./components/Dashboard";
 import StockTracking from "./components/StockTracking";
 import PricingAnalysis from "./components/PricingAnalysis";
 import StoreVisits from "./components/StoreVisits";
-// import ShareOfShelf from "./components/ShareOfShelf";
 import CompetitorPricing from "./components/CompetitorPricing";
 import SalesPresence from "./components/SalesPresence";
 import Notifications from "./components/Notifications";
 import Profile from "./components/Profile";
 import GlobalLoading from "./components/common/GlobalLoading";
 import { ToastContainer } from "./components/common/Toast";
-import ShareOfShelf from "./components/ShareofShelf";
+import ShareOfShelf from "./components/ShareOfShelf";
 
 function App() {
   const { isAuthenticated, isLoading, login } = useAuth();

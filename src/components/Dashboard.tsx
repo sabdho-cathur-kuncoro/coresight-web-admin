@@ -17,7 +17,7 @@ import {
 
 const Dashboard: React.FC = () => {
   const { user } = useAuth();
-  const { success, error, warning, info } = useToast();
+  const { success, warning, info } = useToast();
   const { isOpen: isModalOpen, openModal, closeModal } = useModal();
   const {
     isOpen: isConfirmOpen,

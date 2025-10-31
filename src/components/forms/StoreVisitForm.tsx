@@ -30,6 +30,7 @@ const StoreVisitForm: React.FC<StoreVisitFormProps> = ({
   onSuccess,
 }) => {
   const { success, error } = useToast();
+  console.log(success);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -132,7 +133,7 @@ const StoreVisitForm: React.FC<StoreVisitFormProps> = ({
 
       onClose();
     } catch (err: any) {
-      error("Error", "Failed to save visit data. Please try again.");
+      error("Error", "Failed to save visit data. Please try again.", err);
     } finally {
       setIsSubmitting(false);
     }

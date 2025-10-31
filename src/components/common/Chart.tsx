@@ -11,10 +11,10 @@ const Chart: React.FC<ChartProps> = ({ data, type, height }) => {
   const minValue = Math.min(...data.map((d) => d.value));
   const range = maxValue - minValue;
 
-  const getY = (value: number) => {
-    const normalizedValue = (value - minValue) / range;
-    return height - normalizedValue * (height - 40) - 20;
-  };
+  // const _getY = (value: number) => {
+  //   const normalizedValue = (value - minValue) / range;
+  //   return height - normalizedValue * (height - 40) - 20;
+  // };
 
   const pathData = data
     .map((point, index) => {
